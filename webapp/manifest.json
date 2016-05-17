@@ -41,8 +41,8 @@
 	"sap.ui5": {
 		"_version": "1.1.0",
 		"rootView": {
-			"viewName": "maintenance.view.View1",
-			"type": "XML"
+			"viewName": "maintenance.view.Master",
+			"type": "JS"
 		},
 		"dependencies": {
 			"minUI5Version": "1.30.0",
