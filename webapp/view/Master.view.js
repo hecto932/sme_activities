@@ -36,7 +36,7 @@ sap.ui.jsview("maintenance.view.Master", {
 		var oItemTemplate4 = new sap.m.ObjectListItem({
 			id: "sList4",
 			title: "Semana 4",
-			number: "957",
+			number: "0.957",
 			numberUnit: "Kg"
 		});
 		var oItemTemplate5 = new sap.m.ObjectListItem({

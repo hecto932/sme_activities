@@ -1,1 +1,11 @@
 /* Enter your custom styles here */
+
+.correct{
+	background: #007833;
+	color: white;
+	width: 2em;
+}
+
+.tableSpace{
+	margin-top: 1em;
+}

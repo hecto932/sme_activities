@@ -17,31 +17,25 @@ sap.ui.jsview("maintenance.view.Intro", {
 		var oObjectHeader = new sap.m.ObjectHeader({
 
 			title : "LOTE Nº 416165",
-			intro: "Description",
 			icon: "sap-icon://product",
 			fullScreenOptimized: false,
 			condensed: false,
 			responsive: true,
 			backgroundDesign: "Solid",
 			statuses: [
-				/*new sap.m.ProgressIndicator({
-					percentValue: 80,
-					displayValue: "Salud 80%",
-					state: "Success",
-					width: "55%"
-				}),*/
 				new sap.m.ObjectStatus({
 					title: "Peso del Lote",
 					text: "1.800.000 Kgs"
 				}),
 				new sap.m.ObjectStatus({
-					title: "Cantidad de pollos",
-					text: "40000"
+					title: "Cantidad de aves",
+					text: "45879"
 				})
 			]
 		});
 
 		var oTable = new sap.m.Table();
+		oTable.addStyleClass("tableSpace");
 
 		var col1 = new sap.m.Column("col1", { 
 			width: "15%", 
@@ -69,119 +63,167 @@ sap.ui.jsview("maintenance.view.Intro", {
 
 		var oItem1 = new sap.m.ColumnListItem({
 			cells: [
-				new sap.m.Text({
-					text: "1"
+				new sap.m.ObjectNumber({
+					number: "1",
+					state: "None"
 				}),
-				new sap.m.Text({
-					text: "10"
+				new sap.m.ObjectNumber({
+					number: "4",
+					numberUnit: "Aves",
+					state: "Success"
 				}),
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "7",
+					numberUnit: "Aves",
+					state: "Success"
 				}),
-				new sap.m.Text({
-					text: "400 Kg"
+				new sap.m.ObjectNumber({
+					number: "123",
+					numberUnit: "Kg",
+					state: "Success"
 				})
 			]
 		});
 
 		var oItem2 = new sap.m.ColumnListItem({
 			cells: [
-				new sap.m.Text({
-					text: "2"
+				new sap.m.ObjectNumber({
+					number: "2",
+					state: "None"
 				}),
-				new sap.m.Text({
-					text: "10"
+				new sap.m.ObjectNumber({
+					number: "22",
+					numberUnit: "Aves",
+					state: "Warning"
 				}),
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "3",
+					numberUnit: "Aves",
+					state: "Success"
 				}),
-				new sap.m.Text({
-					text: "400 Kg"
+				new sap.m.ObjectNumber({
+					number: "4124",
+					numberUnit: "Kg",
+					state: "Success"
 				})
 			]
 		});
 
 		var oItem3 = new sap.m.ColumnListItem({
 			cells: [
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "3",
+					state: "None"
 				}),
-				new sap.m.Text({
-					text: "10"
+				new sap.m.ObjectNumber({
+					number: "15",
+					numberUnit: "Aves",
+					state: "Success"
 				}),
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "10",
+					numberUnit: "Aves",
+					state: "Warning"
 				}),
-				new sap.m.Text({
-					text: "400 Kg"
+				new sap.m.ObjectNumber({
+					number: "122",
+					numberUnit: "Kg",
+					state: "Success"
 				})
 			]
 		});
 
 		var oItem4 = new sap.m.ColumnListItem({
 			cells: [
-				new sap.m.Text({
-					text: "4"
+				new sap.m.ObjectNumber({
+					number: "4",
+					state: "None"
 				}),
-				new sap.m.Text({
-					text: "10"
+				new sap.m.ObjectNumber({
+					number: "12",
+					numberUnit: "Aves",
+					state: "Success"
 				}),
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "5",
+					numberUnit: "Aves",
+					state: "Warning"
 				}),
-				new sap.m.Text({
-					text: "400 Kg"
+				new sap.m.ObjectNumber({
+					number: "1234",
+					numberUnit: "Kg",
+					state: "Success"
 				})
 			]
 		});
 
 		var oItem5 = new sap.m.ColumnListItem({
 			cells: [
-				new sap.m.Text({
-					text: "5"
+				new sap.m.ObjectNumber({
+					number: "5",
+					state: "None"
 				}),
-				new sap.m.Text({
-					text: "10"
+				new sap.m.ObjectNumber({
+					number: "50",
+					numberUnit: "Aves",
+					state: "Error"
 				}),
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "18",
+					numberUnit: "Aves",
+					state: "Warning"
 				}),
-				new sap.m.Text({
-					text: "400 Kg"
-				})
-			]
+				new sap.m.ObjectNumber({
+					number: "6786",
+					numberUnit: "Kg",
+					state: "Success"
+				})			]
 		});
 
 		var oItem6 = new sap.m.ColumnListItem({
 			cells: [
-				new sap.m.Text({
-					text: "6"
+				new sap.m.ObjectNumber({
+					number: "6",
+					state: "None"
 				}),
-				new sap.m.Text({
-					text: "10"
+				new sap.m.ObjectNumber({
+					number: "23",
+					numberUnit: "Aves",
+					state: "Warning"
 				}),
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "6",
+					numberUnit: "Aves",
+					state: "Success"
 				}),
-				new sap.m.Text({
-					text: "400 Kg"
+				new sap.m.ObjectNumber({
+					number: "6786",
+					numberUnit: "Kg",
+					state: "Success"
 				})
 			]
 		});
 
 		var oItem7 = new sap.m.ColumnListItem({
 			cells: [
-				new sap.m.Text({
-					text: "7"
+				new sap.m.ObjectNumber({
+					number: "7",
+					state: "None"
 				}),
-				new sap.m.Text({
-					text: "10"
+				new sap.m.ObjectNumber({
+					number: "45",
+					numberUnit: "Aves",
+					state: "Error"
 				}),
-				new sap.m.Text({
-					text: "3"
+				new sap.m.ObjectNumber({
+					number: "28",
+					numberUnit: "Aves",
+					state: "Error"
 				}),
-				new sap.m.Text({
-					text: "400 Kg"
+				new sap.m.ObjectNumber({
+					number: "678",
+					numberUnit: "Kg",
+					state: "Success"
 				})
 			]
 		});
@@ -215,22 +257,26 @@ sap.ui.jsview("maintenance.view.Intro", {
 			]
 		});
 
+		var oRatingIndicator = new sap.m.RatingIndicator({
+			iconSize: "1.5em",
+			enabled : true,
+			maxValue : 5,
+			value : 3.5,
+			visualMode: "Full"
+		})
+
 		var oFlexBox = new sap.m.FlexBox({
 			alignItems:"Start",
 			justifyContent:"Center",
 			items: [
-				new sap.m.RatingIndicator({
-					iconSize: "1em",
-					enabled : true,
-					maxValue : 5,
-					value : 2.5,
-					visualMode: "Full"
-				})
+				oRatingIndicator
 			]
 		});
 
 		var oPanel = new sap.m.Panel({
+			backgroundDesign: "Solid",
 			content: [
+				oObjectHeader,
 				oFlexBox
 			]
 		});
@@ -238,7 +284,6 @@ sap.ui.jsview("maintenance.view.Intro", {
  		return new sap.m.Page({
 			title: "Galpón 1 - Control de Producción",
 			content: [
-				oObjectHeader,
 				oPanel,
 				oGridLayout
 			],
