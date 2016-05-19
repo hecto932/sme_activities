@@ -19,7 +19,7 @@
 
 		<script>
 
-			var oSplitApp = new sap.m.SplitApp("appId",{});
+			/*var oSplitApp = new sap.m.SplitApp("appId",{});
 
 			var oIntroPage = sap.ui.view({
 				id: "introId",
@@ -37,17 +37,17 @@
 			oSplitApp.addMasterPage(oMasterPage);
 			
 			oSplitApp.setInitialDetail("introId");
-			oSplitApp.setInitialMaster("masterId");
+			oSplitApp.setInitialMaster("masterId");*/
 
-			oSplitApp.placeAt("content");
-			/*sap.ui.getCore().attachInit(function() {
+			//oSplitApp.placeAt("content");
+			sap.ui.getCore().attachInit(function() {
 				new sap.m.Shell({
 					app: new sap.ui.core.ComponentContainer({
 						height : "100%",
 						name : "maintenance"
 					})
-				}).placeAt("content");
-			});*/
+				}).setAppWidthLimited(false).placeAt("content");
+			});
 		</script>
 	</head>
 
