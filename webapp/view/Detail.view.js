@@ -1,16 +1,16 @@
-sap.ui.jsview("maintenance.view.Intro", {
+sap.ui.jsview("maintenance.view.Detail", {
 
 	/** Specifies the Controller belonging to this View. 
 	 * In the case that it is not implemented, or that "null" is returned, this View does not have a Controller.
-	 * @memberOf dailyReport.view.Farm
+	 * @memberOf maintenance.view.Detail
 	 */
 	getControllerName: function() {
-		return "maintenance.controller.Intro";
+		return "maintenance.controller.Detail";
 	},
 
 	/** Is initially called once after the Controller has been instantiated. It is the place where the UI is constructed. 
 	 * Since the Controller is given to this method, its event handlers can be attached right away.
-	 * @memberOf dailyReport.view.Farm
+	 * @memberOf maintenance.view.Detail
 	 */
 	createContent: function(oController) {
 		
@@ -18,6 +18,7 @@ sap.ui.jsview("maintenance.view.Intro", {
 
 			title : "LOTE Nº 416165",
 			icon: "sap-icon://product",
+			intro: "Semana 1",
 			fullScreenOptimized: false,
 			condensed: false,
 			responsive: true,
@@ -25,11 +26,13 @@ sap.ui.jsview("maintenance.view.Intro", {
 			statuses: [
 				new sap.m.ObjectStatus({
 					title: "Peso del Lote",
-					text: "1.800.000 Kgs"
+					text: "1.800.000 Kgs",
+					state: "None"
 				}),
 				new sap.m.ObjectStatus({
-					title: "Cantidad de aves",
-					text: "45879"
+					title: "Cantidad de Aves",
+					text: "45879",
+					state: "None"
 				})
 			]
 		});
@@ -38,8 +41,7 @@ sap.ui.jsview("maintenance.view.Intro", {
 		oTable.addStyleClass("tableSpace");
 
 		var col1 = new sap.m.Column("col1", { 
-			width: "15%", 
-			header: new sap.m.Label({ text: "Dia", textAlign: "Center", design: "Bold" }), 
+			header: new sap.m.Label({ text: "Día", textAlign: "Center", design: "Bold" }), 
 			hAlign: "Center" 
 		});
 		var col2 = new sap.m.Column("col2", { 
@@ -258,10 +260,10 @@ sap.ui.jsview("maintenance.view.Intro", {
 		});
 
 		var oRatingIndicator = new sap.m.RatingIndicator({
-			iconSize: "1.5em",
-			enabled : true,
+			iconSize: "1.3em",
+			enabled : false,
 			maxValue : 5,
-			value : 3.5,
+			value : 3,
 			visualMode: "Full"
 		})
 

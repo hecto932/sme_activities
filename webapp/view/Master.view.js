@@ -19,38 +19,50 @@ sap.ui.jsview("maintenance.view.Master", {
 			id: "sList1",
 			title: "Semana 1",
 			number: "0.045",
-			numberUnit: "Kg"
+			numberUnit: "Kg",
+			type: "Active",
+			numberState: "Success"
 		});
 		var oItemTemplate2 = new sap.m.ObjectListItem({
 			id: "sList2",
 			title: "Semana 2",
 			number: "0.300",
-			numberUnit: "Kg"
+			numberUnit: "Kg",
+			type: "Active",
+			numberState: "Success"
 		});
 		var oItemTemplate3 = new sap.m.ObjectListItem({
 			id: "sList3",
 			title: "Semana 3",
 			number: "0.700",
-			numberUnit: "Kg"
+			numberUnit: "Kg",
+			type: "Active",
+			numberState: "Success"
 		});
 		var oItemTemplate4 = new sap.m.ObjectListItem({
 			id: "sList4",
 			title: "Semana 4",
 			number: "0.957",
-			numberUnit: "Kg"
+			numberUnit: "Kg",
+			type: "Active",
+			numberState: "Success"
 		});
 		var oItemTemplate5 = new sap.m.ObjectListItem({
 			id: "sList5",
 			title: "Semana 5",
 			number: "1.565",
-			numberUnit: "Kg"
+			numberUnit: "Kg",
+			type: "Active",
+			numberState: "Success"
 		});
 
 		var oItemTemplate6 = new sap.m.ObjectListItem({
 			id: "sList6",
 			title: "Semana 6",
 			number: "1.800",
-			numberUnit: "Kg"
+			numberUnit: "Kg",
+			type: "Active",
+			numberState: "Success"
 		});
 
 		var oList = new sap.m.List({
