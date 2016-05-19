@@ -79,7 +79,6 @@
                 "viewType": "XML",
                 "viewPath": "maintenance.view",
                 "controlId": "splitApp",
-                "transition": "slide",
                 "controlAggregation": "detailPages",
                 "bypassed": {
                     "target": ["master", "detail"]
